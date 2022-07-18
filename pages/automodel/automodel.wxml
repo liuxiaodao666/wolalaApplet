@@ -1,0 +1,61 @@
+<!--pages/automodel/automodel.wxml-->
+
+<view class="container">
+  <view class="title">
+    <text class="title-text">自动模式</text>
+  </view>
+
+  <view class="param-set">
+    <picker class="temperature-picker" bindchange="bindTemperaturePickerChange" mode="selector" value="{{temperatureIndex}}" range="{{temperatureArray}}">
+      <view>
+        <text class="temperature-text">水温预设: </text>
+        <text class="temperature-value">{{temperatureArray[temperatureIndex]}} ℃</text>
+      </view>
+    </picker>
+
+    <picker bindchange="bindWaterLevelPickerChange" mode="selector" value="{{waterIndex}}" range="{{waterArray}}">
+      <view>
+        <text class="temperature-text">液位预设: </text>
+        <text class="temperature-value">{{waterArray[waterIndex]}} ml</text>
+      </view>
+    </picker>
+
+  </view>
+
+  <view class="current-param">
+    <view class="current-temperature">
+      <text class="temperature-text">实时水温: </text>
+      <text class="current-value">{{currentTemperature}} ℃</text>
+    </view>
+    <view class="current-level">
+      <text class="temperature-text">实时液位: </text>
+      <text class="current-value">{{currentLevel}} ml</text>
+    </view>
+  </view>
+
+  <view class="work-state-container">
+    <view class="work-state-outter">
+      <view class="work-state-inner">
+        <view class="water-status" style=" background-color:{{workState[waterState]}}">
+          <text class="state-text">注水</text>
+        </view>
+        <view class="peristalsis-state" style="background-color:{{workState[peristalsisState]}}">
+          <text class="state-text">蠕动</text>
+        </view>
+        <view class="blowdown-state" style="background-color:{{workState[blowdownState]}}">
+          <text class="state-text">排污</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <button class="auto-start-btn" style="display: {{autoModelStartBtnDsipaly}}" bindtap="autoModelStart">
+      <text class="auto-start-text">启动</text>
+    </button>
+    <button class="auto-stop-btn" style="display: {{autoModelSopBtnDsipaly}}" bindtap="autoModelStop">
+      <text class="auto-stop-text">停止</text>
+    </button>
+  </view>
+
+</view>

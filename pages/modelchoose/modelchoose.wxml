@@ -1,0 +1,25 @@
+<!--pages/modelchoose/modelchoose.wxml-->
+<view class="container">
+  <view class="device-display">
+    <image class="bluetooth-img" src="/images/buletooth_01_50x50.jpg" mode="aspectFit"></image>
+    <view class="device-name">
+      <text class="device-name-text">设备: {{deviceID}}</text>
+    </view> 
+  </view>
+  <view class="model-choose">
+    <!-- <text class="model-choose-text">模式选择 :</text> -->
+    
+    <button class="auto-model-btn"  bindtap="goToAutoModel">
+    <view class="auto-model-style">
+      <image class="auto-model-img" src="/images/auto_model.png" mode="aspectFit"></image>
+      <text style="font-size: large;">自动模式</text>
+    </view>
+    </button>
+    <button class="handle-model-btn" bindtap="goToHandleModel">
+      <view class="auto-model-style">
+      <image class="auto-model-img" src="/images/handle_model.png" mode="aspectFit"></image>
+      <text style="font-size: large;">手动模式</text>
+    </view>
+    </button>
+  </view>
+</view>

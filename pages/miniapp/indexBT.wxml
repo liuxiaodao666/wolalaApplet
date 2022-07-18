@@ -1,0 +1,42 @@
+<!--pages/miniapp/indexBT.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="userinfo">
+      <block wx:if="{{canIUseOpenData}}">
+        <block wx:if="{{signDsipaly}}">
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="https://www.liuxiaodao.cn/source/image/signin.png" mode="cover"></image>
+        </block>
+        <block wx:else>
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </block>
+      <!-- <block wx:elif="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+        <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+      </block> -->
+      <!-- <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block> -->
+    </view>
+    <view class="page-section-title">
+      <text class="title-name" style="position: relative; left: 18rpx; top: -6rpx">窝拉拉® 肠疗仪</text>
+    </view>
+    <view class="page-section-bluetooth">
+      <button class="scan-btn" bindtap="scanDeviceEqr">
+        <text class="scan-text">扫码链接设备</text>
+      </button>
+    </view>
+    <view class="connectionDevice">
+      <text class="connectionDevice-text" style="position: relative; left: -15rpx; top: 57rpx">{{connectionDeviceText}}</text>
+    </view>
+
+    <view class="introduce">
+      <button class="consumable-material-scan-btn" bindtap="scanConsumableMaterialEqr" disabled="{{materialScanBtn}}">
+        <text class="scan-text">耗材扫码</text>
+      </button>
+    </view>
+  </view>
+</view>

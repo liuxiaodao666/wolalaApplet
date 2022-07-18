@@ -1,0 +1,182 @@
+/* pages/automodel/automodel.wxss */
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx rgb(148, 144, 144) solid;
+}
+
+.title-text {
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #000;
+  font-size: large;
+}
+
+.param-set {
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx rgb(148, 144, 144) solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.temperature-picker{
+  width: 49%;
+  margin-right: 1%;
+}
+
+.temperature-text {
+  font-size: large;
+  font-weight: bold;
+}
+
+.temperature-value {
+  font-size: large;
+  background-color: blanchedalmond;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.current-param{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx rgb(148, 144, 144) solid;
+}
+
+.current-temperature{
+  width: 50%;
+}
+
+.current-value{
+  font-size: large;
+  padding-left: 10rpx;
+}
+.work-state-container{
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx rgb(148, 144, 144) solid ;
+}
+
+.work-state-outter{
+  margin: auto;
+  height: 500rpx;
+  width: 500rpx;
+  position: relative;
+
+}
+
+.work-state-inner{
+  position: absolute;
+  height: 350rpx;
+  width: 350rpx;
+  border: 2rpx rgb(212, 204, 204) solid;
+  background-color: rgb(226, 230, 222);
+  top: 50%;
+  margin-top: -175rpx;
+  left: 50%;
+  margin-left: -175rpx;
+  border-radius: 180rpx;
+}
+
+.state-text{
+  position: absolute;
+  top: 50%;
+  margin-top: -21rpx;
+  left: 50%;
+  margin-left: -32rpx;
+}
+.water-status {
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 180rpx;
+  left: 50%;
+  margin-left: -50rpx;
+  top: -50rpx;
+
+}
+
+.peristalsis-state{
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 180rpx;
+  left: 75%;
+  top: 75%;
+  margin-top: -50rpx;
+}
+
+.blowdown-state{
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 180rpx;
+  left: 25%;
+  margin-left: -100rpx;
+  top: 75%;
+  margin-top: -50rpx;
+}
+
+
+
+
+.auto-start-btn {
+  
+  margin-top: 30rpx;
+  border: rgb(146, 146, 143) 30rpx solid;
+  height: 300rpx;
+  width: 300rpx !important;
+  padding: 0;
+  border-radius: 180rpx;
+  position: relative;
+  background-color:  #07c160;
+}
+
+.auto-stop-btn {
+  
+  margin-top: 30rpx;
+  border: rgb(146, 146, 143) 30rpx solid;
+  height: 300rpx;
+  width: 300rpx !important;
+  padding: 0;
+  border-radius: 180rpx;
+  position: relative;
+  background-color:  rgb(223, 81, 81);
+}
+
+.auto-start-text {
+  position: absolute;
+  margin: auto;
+  padding: auto;
+  width: 204rpx;
+  height: 48rpx;
+  top: 50%;
+  margin-top: -24rpx;
+  left:50%;
+  margin-left: -102rpx;
+}
+
+.auto-stop-text{
+  position: absolute;
+  margin: auto;
+  padding: auto;
+  width: 204rpx;
+  height: 48rpx;
+  top: 50%;
+  margin-top: -24rpx;
+  left:50%;
+  margin-left: -102rpx;
+}
+
+
+
+
+
+  
+

@@ -1,0 +1,97 @@
+/* pages/modelchoose/modelchoose.wxss */
+
+
+page {
+  width: 100%;
+  background-size:100% 100%;
+  background-image: url("https://www.liuxiaodao.cn/source/image/bk-image.png");
+  background-repeat:no-repeat
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.device-display {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  padding:10rpx;
+  height: 100rpx;
+  margin-bottom: 5%;
+  border-bottom: 2rpx black groove;
+  align-items: center;
+}
+
+.bluetooth-img{
+  margin: 0;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.device-name {
+  font-size: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15rpx;
+  padding:10rpx;
+  background-color: lightblue;
+  width: 450rpx;
+}
+
+.device-name-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.model-choose-text {
+   font-size: x-large;
+}
+
+.auto-model-btn {
+  margin-top: 150rpx;
+  margin-bottom: 50rpx;
+  height: 300rpx;
+  width:450rpx !important;
+  border: 20rpx rgb(40, 171, 214) solid;
+  border-radius: 100rpx;
+  position: relative;
+  background-color: rgb(117, 215, 248);
+}
+
+.auto-model-style {
+  height: 100rpx;
+  width: 300rpx;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  margin-top: -50rpx;
+  left: 50%;
+  margin-left: -150rpx;
+  align-items: center;
+}
+
+.auto-model-img{
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.handle-model-btn{
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  height: 300rpx;
+  width:450rpx !important;
+  border: 20rpx rgb(36, 190, 113) solid;
+  border-radius: 100rpx;
+  position: relative;
+  background-color: rgb(103, 243, 173);
+}
+
+
+
+

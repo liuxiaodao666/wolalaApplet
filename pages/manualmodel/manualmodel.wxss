@@ -1,0 +1,162 @@
+/* pages/manualmodel/manualmodel.wxss */
+
+page {
+  width: 100%;
+  height: 90%;
+  background-size:100% 100%;
+  /* background-image: url("https://www.liuxiaodao.cn/source/image/bk-image1.png"); */
+}
+
+.container {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx rgb(148, 144, 144) solid;
+}
+
+.title-text {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: larger;
+}
+
+.param-set {
+  margin-top: 50rpx;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx rgb(148, 144, 144) solid;
+}
+
+.temperature-picker {
+  display: flex;
+  flex-direction: row;
+}
+
+.temperature-text {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+
+.temperature-style{
+  margin-left: 100rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border: white solid 2rpx;
+  border-radius: 180rpx;
+}
+
+.temperature-value {
+  color: white;
+  font-size: large;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.current-param {
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  /* border-bottom: 2rpx rgb(148, 144, 144) solid; */
+}
+
+.current-temperature {
+  display: flex;
+  flex-direction: row;
+}
+
+.current-value {
+  font-size: large;
+  padding-left: 10rpx;
+  color: white;
+}
+
+.operate-btn {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  /* border-bottom: 2rpx rgb(148, 144, 144) solid; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;    /**子view垂直居中*/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+}
+
+.btn-view {
+  margin-top: 20rpx;
+  margin: auto;
+}
+
+.open-btn {
+  background-color: #07c160;
+  height: 100rpx;
+  width: 200rpx !important;
+  position: relative;
+  border-radius: 30rpx;
+}
+
+.close-btn {
+  background-color: rgb(223, 81, 81);
+  height: 100rpx;
+  width: 200rpx !important;
+  position: relative;
+  border-radius: 30rpx;
+}
+
+.btn-text {
+  position: absolute;
+  top: 50%;
+  margin-top: -24rpx;
+  left: 50%;
+  margin-left: -50rpx;
+}
+
+
+.emergency-stop-btn {
+  margin-top: 30rpx;
+  border: rgb(159, 187, 36) 30rpx solid;
+  height: 200rpx;
+  width: 200rpx !important;
+  padding: 0;
+  border-radius: 180rpx;
+  position: relative;
+  background-color: rgb(223, 81, 81);
+}
+
+.emergency-stop-btn-hover {
+  background-color: rgba(170, 153, 117, 0.281)
+}
+
+.emergency-stop-text {
+  position: absolute;
+  margin: auto;
+  padding: auto;
+  width: 204rpx;
+  height: 48rpx;
+  top: 50%;
+  margin-top: -24rpx;
+  left: 50%;
+  margin-left: -102rpx;
+}
+
+.blowdown-view {
+  padding-top: 20rpx;
+  height: 100rpx;
+  text-align: center;
+  position: relative;
+}
+
+.blowdown-text {
+  position: absolute;
+  font-size: large;
+  top: 50%;
+  margin-top: -24rpx;
+  left: 50%;
+  margin-left: -72rpx;
+}

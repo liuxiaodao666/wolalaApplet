@@ -1,0 +1,112 @@
+/* pages/miniapp/indexBT.wxss */
+
+/* page {background-color:#b4deb0;}  */
+
+
+page {
+  height:100%;
+  width: 100%;
+  background-size:100% 100%;
+  background-image: url("https://www.liuxiaodao.cn/source/image/background_01.png");
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 64rpx;
+  height: 64rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+/* .container {
+  height:100%;
+  width: 100%;
+} */
+.page-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-section-title {
+  text-align: center;
+
+  height: 100rpx;
+  margin-top: 10rpx;
+}
+
+.title-name {
+  font-size:xx-large;
+  text-align: center;
+  align-content: center;
+}
+
+.page-section-bluetooth{
+  align-items: center;
+  margin: auto;
+}
+
+.scan-btn {
+  margin-top: 75rpx;
+  border: rgb(189, 181, 181) 30rpx solid;
+  height: 368rpx;
+  width: 368rpx !important;
+  padding: 0;
+  border-radius: 180rpx;
+  position: relative;
+  top: 74rpx;
+}
+
+.scan-text {
+  position: absolute;
+  margin: auto;
+  padding: auto;
+  /* left: 52rpx;
+  top: 130rpx; */
+  width: 204rpx;
+  height: 48rpx;
+  top: 50%;
+  margin-top: -24rpx;
+  left:50%;
+  margin-left: -102rpx;
+}
+
+.ble-btn{
+  background-color: red;
+  height: 256rpx;
+}
+
+.connectionDevice {
+  margin-top: 30rpx;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110%;
+  font-style: italic;
+}
+
+
+
+.introduce{
+  border-top-style: groove;
+  margin-top: 100rpx;
+
+}
+
+.consumable-material-scan-btn {
+  margin-top: 15rpx;
+  border: rgb(189, 181, 181) 30rpx solid;
+  height: 200rpx;
+  width: 368rpx !important;
+  padding: 0;
+  border-radius: 45rpx;
+  position: relative;
+  top: 74rpx;
+}
+

@@ -1,0 +1,83 @@
+<!--pages/manualmodel/manualmodel.wxml-->
+<view class="container">
+
+
+  <view class="title" style="border-radius: 45rpx; background-color:rgb(122, 122, 223);">
+    <text class="title-text">手动模式</text>
+  </view>
+
+<view style="border-radius: 45rpx; background-color:rgb(122, 122, 223);">
+  <view class="param-set">
+    <picker bindchange="bindTemperaturePickerChange" mode="selector" value="{{index}}" range="{{array}}">
+      <view class="temperature-picker">
+        <text style="display: flex; align-items: center; margin-left: 50rpx;">
+          <text class="temperature-text">水温预设: </text>
+        </text>
+
+        <view class="temperature-style" style="display: flex; align-items: center; vertical-align: center; justify-content: center;">
+          <text class="temperature-value">{{array[index]}} ℃</text>
+        </view>
+
+      </view>
+    </picker>
+  </view>
+
+  <view class="current-param">
+    <view class="current-temperature">
+      <text style="display: flex; align-items: center; margin-left: 50rpx;">
+        <text class="temperature-text">实时水温: </text>
+      </text>
+
+      <view class="temperature-style" style="display: flex; align-items: center; vertical-align: center; justify-content: center;">
+        <text class="current-value">{{currentTemperature}} ℃</text>
+      </view>
+
+    </view>
+    <!-- <view class="current-level">
+      <text class="temperature-text">实时液位: </text>
+      <text class="current-value">{{currentLevel}} ml</text>
+    </view> -->
+  </view>
+</view>
+
+ 
+
+  <view style="margin-top:100rpx;border-radius: 45rpx; background-color:rgb(122, 122, 223); ">
+    <view class="operate-btn">
+      <view class="btn-view">
+        <button class="open-btn" style="display: {{waterOpenBtnDsipaly}};" loading="{{waterOpenBtnLoading}}" bindtap="openWater" disabled="{{openWaterDisabled}}">
+          <text class="btn-text">注水开</text>
+        </button>
+        <button class="close-btn" style="display: {{waterCloseBtnDsipaly}};" loading="{{waterCloseBtnLoading}}" bindtap="closeWater" disabled="{{closeWaterDisabled}}">
+          <text class="btn-text">注水关</text>
+        </button>
+      </view>
+      <view class="btn-view">
+        <button class="open-btn" style="display: {{peristalsisOpenBtnDsipaly}};" loading="{{peristalsisOpenBtnLoading}}" bindtap="openPeristalsis" disabled="{{openPeristalsisDisabled}}">
+          <text class="btn-text">搅拌开</text>
+        </button>
+        <button class="close-btn" style="display: {{peristalsisCloseBtnDsipaly}};" loading="{{peristalsisCloseBtnLoading}}" bindtap="closePeristalsis">
+          <text class="btn-text">搅拌关</text>
+        </button>
+      </view>
+      <!-- <view class="blowdown-view">
+      <text class="blowdown-text">排污提示</text>
+    </view> -->
+      <!--排污功能目前未提供-->
+      <!-- <view class="btn-view">
+      <button class="open-btn" style="display: {{blowdownOpenBtnDsipaly}};" bindtap="openBlowdown">
+        <text class="btn-text">排污开</text>
+      </button>
+      <button class="close-btn" style="display: {{blowdownCloseBtnDsipaly}};" bindtap="closeBlowdown">
+        <text class="btn-text">排污关</text>
+      </button>
+    </view> -->
+    </view>
+  </view>
+
+  <view class="emergency-stop-view">
+    <button class="emergency-stop-btn" bindtap="emergencyStop" hover-class="emergency-stop-btn-hover">
+      <text class="emergency-stop-text">停止</text>
+    </button>
+  </view>
+</view>
