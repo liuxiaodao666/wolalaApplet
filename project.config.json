@@ -49,7 +49,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
   "appid": "wxfc62e8923ff54fa3",
-  "projectname": "miniprogram-1",
+  "projectname": "wolalaApplet",
   "debugOptions": {
     "hidedInDevtools": []
   },
